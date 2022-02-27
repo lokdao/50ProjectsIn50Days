@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
+
+/* Defining custom variables 
+   which will be used in elements styling
+   makes it easier to change colors in one place   
+   */
+:root {
+  --line-border-empty: #e0e0e0;
+  --line-border-fill: #3498db;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f6f7fb;
+  font-family: 'Muli', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+}
+
+.progress-container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 30px;
+  max-width: 100%;
+  width: 350px;
+}
+
+/* Line styling
+   default grey line */
+.progress-container::before {
+  content: '';
+  /* Using color variable defined at the top */
+  background-color: var(--line-border-empty);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  /* Center line on the text */
+  transform: translateY(-50%);
+  height: 4px;
+  /* Make line take the full width of the container */
+  width: 100%;
+  z-index: -1;
+}
+
+/* Line styling
+   blue line showing progress */
+.progress {
+  background-color: var(--line-border-fill);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 4px;
+  width: 0%;
+  z-index: -1;
+  transition: 0.4s ease;
+}
+
+.circle {
+  background-color: #fff;
+  color: #999;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #e0e0e0;
+  transition: 0.4s ease;
+}
+
+.circle.active {
+  border-color: var(--line-border-fill);
+}
+
+.btn {
+  background-color: var(--line-border-fill);
+  /* Set text color within the button */
+  color: #fff;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: inherit;
+  padding: 8px 30px;
+  /* Space between buttons */
+  margin: 5px;
+  font-size: 14px;
+}
+
+/* CSS while button is clicked */
+.btn:active {
+  /* Slightly reduce size of button when clicked */
+  transform: scale(0.98);
+}
+
+/* CSS after button is clicked */
+.btn:focus {
+  outline: 0;
+}
+
+.btn:disabled {
+  background-color: var(--line-border-empty);
+  cursor: not-allowed;
+}

@@ -4,5 +4,8 @@ Based on the eponymous Udemy course, this repo contains my attempts at completin
 
 <br/>
 
-- Day 1 - [Expanding Cards](https://github.com/lokdao/50ProjectsIn50Days/day1)
-- Day 2 - [Progress Steps](https://github.com/lokdao/50ProjectsIn50Days/day2)
+- Day 1 - [Expanding Cards](https://github.com/lokdao/50ProjectsIn50Days/tree/main/day1)
+- Day 2 - [Progress Steps](https://github.com/lokdao/50ProjectsIn50Days/tree/main/day2)
+  - **Suggested improvement:** each circle should be filled only AFTER the line is filled and each circle fill animation should follow a circular motion. Apply the reverse, where a circle "unfills" first, followed by the line
+- Day 3 - [Rotating Navigation](https://github.com/lokdao/50ProjectsIn50Days/tree/main/day3)
+- Day 4 - [Hidden Search Form](https://github.com/lokdao/50ProjectsIn50Days/tree/main/day4)
