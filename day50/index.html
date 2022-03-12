@@ -7,10 +7,52 @@
     <!-- Brings in font awesome library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
-    <title>My Project</title>
+    <title>Catch The Insect</title>
 </head>
 <body>
-    <h1>Project Starter</h1>
+    <div class="screen">
+        <h1>Catch the Insect</h1>
+        <button class="btn" id="start-btn">Play Game</button>
+    </div>
+
+    <div class="screen">
+        <h1>What is your "favourite" insect?</h1>
+        <ul class="insects-list">
+            <li>
+                <button class="choose-insect-btn">
+                    <p>Fly</p>
+                    <img src="http://pngimg.com/uploads/fly/fly_PNG3946.png" alt="fly">
+                </button>
+            </li>
+            <li>
+                <button class="choose-insect-btn">
+                    <p>Mosquito</p>
+                    <img src="http://pngimg.com/uploads/mosquito/mosquito_PNG18175.png" alt="mosquito">
+                </button>
+            </li>
+            <li>
+                <button class="choose-insect-btn">
+                    <p>Spider</p>
+                    <img src="http://pngimg.com/uploads/spider/spider_PNG12.png" alt="spider">
+                </button>
+            </li>
+            <li>
+                <button class="choose-insect-btn">
+                    <p>Roach</p>
+                    <img src="http://pngimg.com/uploads/roach/roach_PNG12163.png"alt="Roach">
+                </button>
+            </li>
+        </ul>
+    </div>
+
+    <div class="screen game-container" id="game-container">
+        <h3 class="time" id="time"></h3>
+        <h3 class="score" id="score">Score: 0</h3>
+        <h5 class="message" id="message">
+            Are you annoyed yet? <br>
+            You are playing an impossible game!!
+        </h5>
+    </div>
 
     <script src="script.js"></script>
 </body>
